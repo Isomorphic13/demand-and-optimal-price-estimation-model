@@ -12,7 +12,7 @@ Script to play with the simulations. Demand of the market in year is calculated 
 So expected value for units sold for time range will be D' = D * days_left / 365.
 Because of how customers are created in a simulation:
 Alpha lays in the middle of range [number of customer * lower_bound_for_alph, upper of customer * lower_bound_for_alph]
-Epsilon lays around -1.5
+Epsilon lays around -1.5.
 '''
 
 mcs = MonteCarloSimulation(lower_bound_for_alpha = 8000, upper_bound_for_alpha = 11000, number_of_customers = 500)
