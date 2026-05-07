@@ -24,9 +24,9 @@ class Customer:
 
     def consume(self, price) -> int:
         """
-        Method gives random integer from a poisson distribution
-        :param price: price of the product on the currrent day
-        :return: random integer from poisson distribution
+        Method gives random integer from a poisson distribution.
+        :param price: price of the product on the current day.
+        :return: random integer from poisson distribution.
         """
 
         return np.random.poisson(self.get_mu(price))
