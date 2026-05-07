@@ -30,18 +30,17 @@ reserve =1000
 
 lam_normal = mcs.alpha_mean * price_normal ** mcs.epsilon_mean * days_left / 365
 sold_amount = 0
-
-
 list_of_sold_amount = []
 
 
+# Simulation to get average of profit in given time interval with the chosen normal price
 for j in range(2000):
-    for i in range(3):
+    for i in range(days_left):
         random_number = random.uniform(0, 1)
         k = sp.stats.poisson.ppf(random_number, lam_normal)
         if k <= reserve:
             sold_amount += k
-        else:
+        else: # sold units of the product can't be bigger than the reserve, therefore soul_amoun must be equal to the reserve's size
             sold_amount += reserve
 
     list_of_sold_amount.append(sold_amount)
@@ -51,12 +50,14 @@ sold_amount_mean_value = np.array(list_of_sold_amount).sum() / 2000
 print(f"profit with the normal price {price_normal}:")
 print(price_normal * sold_amount_mean_value - reserve * cost)
 
-price_optimal = optimal_price_estimator.optimal_price(0, 10000, reserve = reserve, days_left = days_left, cost=cost)
 
+
+price_optimal = optimal_price_estimator.optimal_price(0, 10000, reserve = reserve, days_left = days_left, cost=cost)
 lam_optimal = mcs.alpha_mean * price_optimal ** mcs.epsilon_mean * days_left / 365
 sold_amount = 0
 list_of_sold_amount = []
 
+# Simulation to get average of profit in given time interval with the chosen optimal price
 for j in range(2000):
     for i in range(3):
         random_number = random.uniform(0, 1)
