@@ -5,4 +5,8 @@ or
 $$Q = \alpha p^{-\epsilon}$$
 
 
-Where $Q$ is demand in one year, $p$ price of the product and $epsilon$ is elasticity (see: https://en.wikipedia.org/wiki/Elasticity_(economics))
+Where $Q$ is demand in one year, $p$ price of the product and $\epsilon$ is elasticity (see: https://en.wikipedia.org/wiki/Elasticity_(economics)). \
+\
+d
+
+
