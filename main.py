@@ -22,7 +22,7 @@ print("elasticity of the market: " + str(mcs.epsilon_mean))
 optimal_price_estimator = OptimalPriceEstimator(alpha_factor = mcs.alpha_mean, epsilon = mcs.epsilon_mean)
 
 
-# Here you can with the parameters
+# Here you can play with the parameters
 price_normal = 18
 days_left = 3
 cost = 5

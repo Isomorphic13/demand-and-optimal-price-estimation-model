@@ -6,7 +6,7 @@ class Customer:
 
     """
     The class represents a customer, who buys a product after his demand.
-    A customer buys amount product in a single day after Poisson distribution, where mu = alpha * price ** epsilon /365
+    A customer buys amount product in a single day after Poisson distribution, where mu = alpha * price ** epsilon /365.
     """
 
     def __init__(self, id, lower_bound_for_alpha, upper_bound_for_alpha):
