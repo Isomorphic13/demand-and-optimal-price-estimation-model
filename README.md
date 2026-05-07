@@ -14,6 +14,8 @@ $$E[units \ sold] = \sum_{k=0} ^s P(K = k)k + P(k > s) s$$
 Where P is the probability of k units will be sold:
 $$P(K = k) = \frac{e^ \lambda}{k!} \lambda ^k$$
 
-Therefore our task is find $\max E$
+Therefore our task is to find $\max E[units \ sold]$ with parameters $p,d,s$
+
+
 
 
