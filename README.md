@@ -9,5 +9,6 @@ Where $Q$ is demand in one year, $p$ price of the product and $\epsilon$ is elas
 \
 To estimate the parameters we assume that each csutomer's demand follows Poisson distribution, where $\lambda = Q$, and with linearity of random variables from poisson distribution the market itself follows Poisson distribution. For the estimation we use baysian update for pairs ($\alpha$ , $\epsilon$) (see (https://en.wikipedia.org/wiki/Bayesian_inference). \
 Thus with estimeted $\alpha$ and $\epsilon$ parameters we can calculate the optimal product price, if we consider inventory size (how much do we have now) and expairing date (the product will be gone after some time interval) problems. This is achieved by maximazing the expected value of profit for a given time. If on avarage we sell $\lambda = \alpha p ^ \epsilon" in one year we expect to sell $\lambda \frac{d}{365}$ units of a product in time interval $\frac{d}{365}$, where $d$ is day left before the expiration date. The inventory size $s$ truncates the expected amount of sold product units in the given time interval, because if the demand higher than inventory size, it't impossible to sell more. Thus it becomes:
+
 $$E[units sold] = \sum_{k=0} ^s P(K = k)k + \sum_{k=s+1} ^ \infty P(k > s) s$$
 
