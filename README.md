@@ -12,9 +12,9 @@ Thus with the derived $\alpha$ and $\epsilon$ parameters of the market we can ca
 
 $$E[units \ sold] = \sum_{k=0} ^s P(K = k)k + P(K > s) s$$
 Where P is the probability of k units will be sold:
-$$P(K = k) = \frac{e^ \lambda}{k!} \lambda ^k, \lambda = \alpha p ^ \epsilon \frac{d}{365}$$
+$$P(K = k) = \frac{e^ \lambda}{k!} \lambda ^k, \ \lambda = \alpha p ^ \epsilon \frac{d}{365}$$
 Then the expected profit will become:
-$$E[profit] = p E[units \ sold] - sc, c - \text{costs of single product unit}$$
+$$E[profit] = p E[units \ sold] - sc, \ c - \text{costs of single product unit}$$
 
 Therefore our task is to find $\max E[profit]$ with ther respect to  parameters $d,s,c$. \
 Furthermore to verify the result of the model, we use monte carlo simulations (see: https://en.wikipedia.org/wiki/Monte_Carlo_method) for the Bayesian updating and the optimal price in main.py.
