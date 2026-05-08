@@ -2,7 +2,7 @@ This model implements estimation of the parameters $\alpha$ and $\epsilon$ in th
 
 $$\log(Q) = \beta_1 + \beta_2 \log(p)$$
 or
-$$Q = \alpha p^{-\epsilon}$$
+$$Q = \alpha p^{\epsilon}$$
 
 
 Where $Q$ is demand for a product in one year, $p$ is the price of the product and $\epsilon$ is elasticity (see: https://en.wikipedia.org/wiki/Elasticity_(economics)). \
