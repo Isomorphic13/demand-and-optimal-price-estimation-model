@@ -17,7 +17,7 @@ Then the expected profit will become:
 $$E[profit] = p E[units \ sold] - sc, \ c - \text{costs of single product unit}$$
 
 Therefore our task is to find the price $p_o = \text{arg max} \ E[profit]$ with the given parameters $d,s,c$. \
-Furthermore to verify the result of the model, we use monte carlo simulations (see: https://en.wikipedia.org/wiki/Monte_Carlo_method) for the Bayesian updating and the optimal price in main.py.
+Furthermore to verify the result of the model, we use monte carlo simulations (see: https://en.wikipedia.org/wiki/Monte_Carlo_method) for the Bayesian updating and the optimal price in main.py. ()
 
 
 
