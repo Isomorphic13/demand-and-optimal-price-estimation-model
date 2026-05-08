@@ -14,7 +14,7 @@ $$E[units \ sold] = \sum_{k=0} ^s P(K = k)k + P(k > s) s$$
 Where P is the probability of k units will be sold:
 $$P(K = k) = \frac{e^ \lambda}{k!} \lambda ^k$$
 
-Therefore our task is to find $\max E[units \ sold]$ with the parameters $p,d,s$. \
+Therefore our task is to find $\max E[units \ sold]$ with the parameters $d,s$. \
 Furthermore to verify the result of the model, we use a monte carlo simulation for the Bayesian updating and the optimal price in main.py.
 
 
