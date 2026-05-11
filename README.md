@@ -1,3 +1,4 @@
+Author: Toimat Tursunbek \
 This model implements estimation of the parameters $\alpha$ and $\epsilon$ in the log-linear demand model for a single product, in which demand can be written as
 
 $$\log(Q) = \beta_1 + \beta_2 \log(p)$$
